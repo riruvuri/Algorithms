@@ -18,16 +18,15 @@ public class SubSet {
 
     private void helper(List<Integer> input, int currentIndex, Stack<Integer> slate, List<List<Integer>> outputList) {
         // Base case
-        if (input.size() == 0) {
+        if (currentIndex >= input.size()) {
             outputList.add(slate.stream().toList());
             return;
         }
 
         // Recursive case
         slate.push(input.get(currentIndex));
-        input.remove(currentIndex);
-        helper(input, currentIndex+1, slate, outputList);
-        input.add(slate.pop());
+        helper(input, currentIndex +1, slate, outputList);
+        slate.pop();
 
         helper(input, currentIndex+1, slate, outputList);
     }

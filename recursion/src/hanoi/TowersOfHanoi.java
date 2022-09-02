@@ -11,12 +11,9 @@ public class TowersOfHanoi {
     }
     private void move(int n, String source, String aux, String destination, ArrayList<ArrayList<String>> results) {
         if (n == 1) {
-            ArrayList<String> output = new ArrayList<>();
-            output.add(source);
-            output.add(destination);
 
             System.out.println("source:" + source + " destination:" + destination);
-            results.add(output);
+            results.add(new ArrayList<>(Arrays.asList(source, destination)));
             return;
         }
         move(n-1, source, destination, aux, results);
