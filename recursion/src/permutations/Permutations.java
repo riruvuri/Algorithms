@@ -6,6 +6,12 @@ import java.util.Stack;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/*
+Asymptotic complexity in terms of `n` =  size of the input array:
+* Time: O(n * n!).
+* Auxiliary space: O(n).
+* Total space: O(n * n!).
+*/
 public class Permutations {
     public List<List<Integer>> findPermutations(int[] input) {
         List<Integer> inputList = IntStream.of(input)

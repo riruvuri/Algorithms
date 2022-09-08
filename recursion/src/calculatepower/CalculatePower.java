@@ -24,21 +24,4 @@ public class CalculatePower {
             return (sqr * (a%mod)) % mod;
         }
     }
-
-    /*
-    private long helper(Long a , Long b) {
-        int mod = 1000000007;
-        if(b==0) return 1;
-        if(b==1) return (int)(a%mod);
-        if(a==1) return 1;
-        if(a==0) return 0;
-
-        long res = helper(a, b/2)%mod;
-        long sqr = (res*res)%mod;
-        if(b%2 == 0) {
-            return sqr;
-        }else{
-            return (sqr*(a%mod))%mod;
-        }
-    }*/
 }

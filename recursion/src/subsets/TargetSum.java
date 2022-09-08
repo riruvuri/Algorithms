@@ -36,7 +36,7 @@ public class TargetSum {
             return true;
         }
 
-        if (currentIndex >= inputList.size()) {
+        if (currentIndex == inputList.size()) {
             return false;
         }
 

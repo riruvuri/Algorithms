@@ -12,4 +12,11 @@ public class CalculatePowerTest {
 
         Assert.assertEquals(698613978, result);
     }
+
+    @Test
+    public void sample_basic() {
+        CalculatePowerBasic calculatePower = new CalculatePowerBasic();
+        long result = calculatePower.calculatePower(2, 3);
+        Assert.assertEquals(8, result);
+    }
 }

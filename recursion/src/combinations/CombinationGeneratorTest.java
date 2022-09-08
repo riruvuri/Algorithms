@@ -33,4 +33,10 @@ public class CombinationGeneratorTest {
                 && outputList.containsAll(expectedList)
                 && expectedList.containsAll(outputList));
     }
+
+    @Test
+    public void test_comibinationgenerator_alt() {
+        CombinationGeneratorMistake1 alt = new CombinationGeneratorMistake1();
+        alt.generateCombinations(5, 2);
+    }
 }
