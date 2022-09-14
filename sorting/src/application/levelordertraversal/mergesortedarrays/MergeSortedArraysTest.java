@@ -1,4 +1,4 @@
-package application.mergesortedarrays;
+package application.levelordertraversal.mergesortedarrays;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -16,4 +16,22 @@ public class InsertionSort {
 
         return input;
     }
+
+    /*
+    public int[] sort(int[] input) {
+
+        for (int start=0; start < input.length; start++) {
+            int temp = input[start];
+
+            int red= start-1;
+            for (; red >= 0 && input[red] > temp; ) {
+                if (input[red] > temp) {
+                    input[red+1] = input[red];
+                    red--;
+                }
+            }
+            input[red+1] = temp;
+        }
+        return input;
+    }*/
 }

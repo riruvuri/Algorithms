@@ -1,7 +1,6 @@
 package mergesort.algorithm;
 
 public class MergeSort {
-
     public int[] sort(int[] input) {
         mergeSort(input, 0, input.length - 1);
         return input;

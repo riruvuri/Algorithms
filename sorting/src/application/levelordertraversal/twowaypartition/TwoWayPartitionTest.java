@@ -1,6 +1,5 @@
-package application.twowaypartition;
+package application.levelordertraversal.twowaypartition;
 
-import application.mergesortedarrays.MergedSortedArrays;
 import org.junit.Assert;
 import org.junit.Test;
 

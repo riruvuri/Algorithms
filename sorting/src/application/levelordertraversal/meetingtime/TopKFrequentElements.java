@@ -1,4 +1,4 @@
-package application.meetingtime;
+package application.levelordertraversal.meetingtime;
 
 import java.util.Arrays;
 import java.util.HashMap;

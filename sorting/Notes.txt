@@ -2,3 +2,18 @@
 
 Cheat sheet:
 https://github.com/tsiege/Tech-Interview-Cheat-Sheet
+
+Algorithm Order:
+
+Brute-force Algorithms:
+    - Selection sort
+    - Bubble sort
+
+Decrease & Conquer:
+    - Insertion sort
+
+Divide & Conquer:
+    - Merge sort
+    - Quick sort
+
+Transform & Conquer:

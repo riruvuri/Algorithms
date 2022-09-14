@@ -1,4 +1,4 @@
-package application.mergesortedarrays;
+package application.levelordertraversal.mergesortedarrays;
 
 public class MergedSortedArrays {
     /*
