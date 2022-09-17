@@ -1,7 +1,6 @@
 package application.circularlinkedlist;
 
 import binarysearchtrees.algorithm.BinaryTreeNode;
-import jdk.incubator.vector.VectorOperators;
 
 import java.util.ArrayList;
 import java.util.List;

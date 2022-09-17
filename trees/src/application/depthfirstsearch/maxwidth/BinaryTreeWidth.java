@@ -14,7 +14,6 @@ public class BinaryTreeWidth {
         Queue<Pair> queue = new LinkedList<>();
         queue.offer(new Pair(root, 0));
 
-        int parentLevel = 1;
         int maxWidth = 0;
         while (!queue.isEmpty()) {
             int size = queue.size();
@@ -34,7 +33,6 @@ public class BinaryTreeWidth {
                     queue.add(new Pair(current.right, 2* pair.index+1));
                 }
             }
-            parentLevel++;
             maxWidth = Math.max(maxWidth, end-start+1);
         }
 
