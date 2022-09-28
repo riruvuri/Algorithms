@@ -30,7 +30,7 @@ public class TreesTest {
         edges.add(Arrays.asList(0,3));
         edges.add(Arrays.asList(0,1));
         edges.add(Arrays.asList(1,2));
-        edges.add(Arrays.asList(2, 0));
+        edges.add(Arrays.asList(2,0));
 
         boolean isTree = trees.isGraphATree(4, edges);
         Assert.assertEquals(false, isTree);

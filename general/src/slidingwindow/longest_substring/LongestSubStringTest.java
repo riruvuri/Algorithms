@@ -1,8 +1,7 @@
-package longestsubstring;
+package slidingwindow.longest_substring;
 
 import org.junit.Assert;
 import org.junit.Test;
-import voting.MajorityVote;
 
 public class LongestSubStringTest {
 

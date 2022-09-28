@@ -1,4 +1,4 @@
-package longestsubstring;
+package slidingwindow.longest_substring;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,6 +6,7 @@ import java.util.Set;
 /**
  * https://www.youtube.com/watch?v=4i6-9IzQHwo
  *
+ * Length of the longest substring without repeating characters.
  * T(n) = O(n)
  */
 public class LongestSubString {

@@ -6,7 +6,7 @@ public class NQueenPlacer {
 
 
     static ArrayList<ArrayList<String>> find_all_arrangements(Integer n) {
-        // initilize column sequence
+        // initialize column sequence
         int[] cols = new int[n];
         for (int i = 0; i < n; i++) {
             cols[i] = i;

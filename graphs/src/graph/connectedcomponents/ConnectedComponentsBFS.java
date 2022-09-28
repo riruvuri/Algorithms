@@ -1,4 +1,4 @@
-package graph.traversal;
+package graph.connectedcomponents;
 
 import java.util.*;
 
