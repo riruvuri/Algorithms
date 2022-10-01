@@ -33,38 +33,4 @@ public class PermutationsA2 {
     }
 
 
-
-    static ArrayList<String> letter_case_permutations(String s) {
-        ArrayList<String> outputList = new ArrayList<>();
-        char[] input = s.toCharArray();
-        int currentIndex =0;
-        Stack<Character> stack = new Stack<>();
-
-        helper(input,currentIndex, stack, outputList);
-
-        return outputList;
-    }
-
-    static void helper(char[] input, int currentIndex, Stack<Character> slate, ArrayList<String> outputList) {
-        if (currentIndex == input.length) {
-            outputList.add(slate.stream().toString());
-            return;
-        }
-
-        if (Character.isAlphabetic(input[currentIndex])) {
-            slate.push(input[currentIndex]);
-            helper(input, currentIndex+1, slate, outputList);
-            slate.pop();
-
-            slate.push(Character.toUpperCase(input[currentIndex]));
-            helper(input, currentIndex+1, slate, outputList);
-            slate.pop();
-        } else {
-            slate.push(input[currentIndex]);
-            helper(input, currentIndex+1, slate, outputList);
-            slate.pop();
-        }
-    }
-
-
 }

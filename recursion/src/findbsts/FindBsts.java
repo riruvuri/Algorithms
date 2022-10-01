@@ -8,7 +8,7 @@ public class FindBsts {
     public int findBstCount(int n) {
         int[] bstCount = new int[n+1];
         bstCount[0] = 1;
-        bstCount[1] = 1;
+        //bstCount[1] = 1;
         int result = find(bstCount, n);
         return result;
     }

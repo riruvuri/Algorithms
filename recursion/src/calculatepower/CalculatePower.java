@@ -16,7 +16,7 @@ public class CalculatePower {
             return 1;
         }
 
-        long temp = helper(a, b/2) % mod;
+        long temp = helper(a,b/2) % mod;
         long sqr = (temp * temp)%mod;
         if (b % 2 == 0) {
             return sqr % mod;

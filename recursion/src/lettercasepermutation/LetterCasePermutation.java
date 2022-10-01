@@ -26,7 +26,7 @@ public class LetterCasePermutation {
         // Recursive
         Character currentChar = input[currentCharIndex];
         if (Character.isLetter(currentChar)) {
-            slate.push(currentChar);
+            slate.push(Character.toLowerCase(currentChar));
             findPermutation(currentCharIndex+1, slate, input, outputList);
             slate.pop();
 

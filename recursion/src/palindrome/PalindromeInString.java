@@ -50,8 +50,6 @@ public class PalindromeInString {
         int lastSeparator = outputStr.lastIndexOf('|');
         if (lastSeparator != -1) {
             outputStr = outputStr.substring(lastSeparator+1);
-        } else {
-            outputStr = outputStr;
         }
         return outputStr;
     }
