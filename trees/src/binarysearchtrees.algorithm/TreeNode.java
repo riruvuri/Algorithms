@@ -7,7 +7,7 @@ public class TreeNode {
     public Integer value;
     public List<TreeNode> children;
 
-    TreeNode(Integer value) {
+    public TreeNode(Integer value) {
         this.value = value;
         this.children = new ArrayList(3);
     }
