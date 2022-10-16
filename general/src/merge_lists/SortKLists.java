@@ -43,12 +43,6 @@ public class SortKLists {
         LinkedListNode result = new LinkedListNode(-1);
         LinkedListNode current = result;
 
-        if (leftNode == null) {
-            return rightNode;
-        } else if (rightNode == null) {
-            return leftNode;
-        }
-
         while (leftNode != null && rightNode != null) {
             if (leftNode.value < rightNode.value) {
                 current.next = leftNode;
@@ -59,6 +53,12 @@ public class SortKLists {
             }
 
             current = current.next;
+        }
+
+        if (leftNode == null) {
+            current.next = rightNode;
+        } else if (rightNode == null) {
+            current.next = leftNode;
         }
 
         return result.next;

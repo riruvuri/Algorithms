@@ -17,3 +17,43 @@ Divide & Conquer:
     - Quick sort
 
 Transform & Conquer:
+
+
+---------------------------------
+
+List<Integer> output = new ArrayList<>();
+output.stream().mapToInt(Integer::intValue).toArray();
+
+
+----
+int[] nextMinIndex = new int[input.length];
+Arrays.fill(nextMinIndex, -1);
+Stack<Integer> slateIndex = new Stack<>();
+for (int i=input.length-1; i >=0 ; i--) {
+    while (!slateIndex.isEmpty()) {
+        if (input[slateIndex.peek()] > input[i]) {
+            slateIndex.pop();
+        } else {
+            nextMinIndex[i] = slateIndex.peek();
+            break;
+        }
+    }
+    slateIndex.push(i);
+}
+
+
+-----
+
+int[] prevMinIndex = new int[input.length];
+Arrays.fill(prevMinIndex, -1);
+for (int i=0; i < input.length; i++) {
+    while (!slateIndex.isEmpty()) {
+        if (input[slateIndex.peek()] > input[i]) {
+            slateIndex.pop();
+        } else {
+            prevMinIndex[i] = slateIndex.peek();
+            break;
+        }
+    }
+    slateIndex.push(i);
+}

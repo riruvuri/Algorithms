@@ -1,0 +1,4 @@
+Wordlist = {"cat", "bat", "ocean", "cap"}
+
+input: "ycat"
+

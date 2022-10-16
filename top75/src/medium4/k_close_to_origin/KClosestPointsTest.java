@@ -3,7 +3,7 @@ package medium4.k_close_to_origin;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class KClosePointsTest {
+public class KClosestPointsTest {
     @Test
     public void simple_test() {
         int[][] input = new int[][]{{3,3}, {5,-1}, {-2, 4}};

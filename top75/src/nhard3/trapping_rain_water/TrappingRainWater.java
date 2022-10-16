@@ -1,13 +1,9 @@
-package slidingwindow.trapping_rain_water;
-
-import java.util.Arrays;
-import java.util.Stack;
+package nhard3.trapping_rain_water;
 
 public class TrappingRainWater {
-
-    public int totalTrappedWater(int[] height) {
+    public int trap(int[] height) {
         int left=0, right = height.length - 1;
-        int leftMax = height[left], rightMax = height[right];
+        int leftMax = height[0], rightMax = height[right];
 
         int result = 0;
         while (left < right) {
