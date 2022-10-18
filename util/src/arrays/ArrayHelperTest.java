@@ -14,4 +14,11 @@ public class ArrayHelperTest {
         Assert.assertTrue(longList != null);
     }
 
+    @Test
+    public void test_array_sort() {
+        int[][] input = {{2,6},{8,10},{1,3},{15,18}};
+        int[][] output = ArrayHelper.sort(input);
+
+        Assert.assertArrayEquals(new int[][]{{1,3},{2,6},{8,10},{15,18}}, output);
+    }
 }
