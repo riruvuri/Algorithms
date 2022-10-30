@@ -12,7 +12,7 @@ public class SortedRotatedSearch {
 
             if (midElement == target) {
                 return mid;
-            } else if (nums[l] <= nums[mid]) {
+            } else if (nums[l] <= nums[mid]) { // <= is required to support two element arrays like [3,1]
                 // left array is sorted
 
                 // check where the target element is

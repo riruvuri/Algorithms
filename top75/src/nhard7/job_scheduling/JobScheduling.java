@@ -16,19 +16,21 @@ public class JobScheduling {
 
         Collections.sort(jobList, Comparator.comparing(Job::getEnd));
 
-        int[] profits = new int[n];
-        profits[0] = jobList.get(0).profit;
+        int[] totalProfit = new int[n];
+        totalProfit[0] = jobList.get(0).profit;
 
         for (int i=1; i < jobList.size(); i++) {
+            totalProfit[i] = Math.max(jobList.get(i).profit, totalProfit[i-1]);
             for (int j=i-1; j >=0; j--) {
                 if (jobList.get(j).end <= jobList.get(i).start) {
-                    profits[i] = Math.max(profits[i], jobList.get(i).profit + profits[j]);
+                    totalProfit[i] = Math.max(totalProfit[i], jobList.get(i).profit + totalProfit[j]);
+                    break;
                 }
             }
         }
 
         int maxVal = Integer.MIN_VALUE;
-        for (int val : profits) {
+        for (int val : totalProfit) {
             if (maxVal < val) {
                 maxVal = val;
             }

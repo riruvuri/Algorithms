@@ -11,8 +11,8 @@ public class SubstringWithoutRepeatChar {
 
         while (j < length) {
             while(inputChars.contains(inputStr.charAt(j))) {
+                inputChars.remove(inputStr.charAt(i));
                 i++;
-                inputChars.remove(inputStr.charAt(j));
             }
 
             inputChars.add(inputStr.charAt(j));

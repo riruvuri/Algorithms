@@ -1,4 +1,4 @@
-package merge_lists;
+package hard.merge_lists;
 
 import binarysearchtrees.algorithm.LinkedListNode;
 import linkedlists.LinkedListUtil;
@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class SortKListsTest {
     @Test

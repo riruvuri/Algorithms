@@ -11,8 +11,8 @@ import java.util.*;
 public class WordLadder {
     public int ladderLength (String beginWord, String endWord,
                                 List<String> wordList) {
-        Set<String> set = new HashSet<>(wordList);
-        if (!set.contains(endWord)) {
+        Set<String> dictionarySet = new HashSet<>(wordList);
+        if (!dictionarySet.contains(endWord)) {
             return 0;
         }
 
@@ -39,7 +39,7 @@ public class WordLadder {
                         wordArr[j] = (char)k;
 
                         String updatedWord = new String(wordArr);
-                        if (set.contains(updatedWord)
+                        if (dictionarySet.contains(updatedWord)
                                 && !visited.contains(updatedWord)) {
                             queue.add(updatedWord);
                             visited.add(updatedWord);
