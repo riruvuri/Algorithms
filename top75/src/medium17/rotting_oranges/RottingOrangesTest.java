@@ -11,4 +11,12 @@ public class RottingOrangesTest {
         int result = rottingOranges.orangesRotting(basket);
         Assert.assertTrue(result == 4);
     }
+
+    @Test
+    public void test_simple_alt() {
+        int[][] basket = {{0,2}};
+        RottingOranges rottingOranges = new RottingOranges();
+        int result = rottingOranges.orangesRotting(basket);
+        Assert.assertTrue(result == 0);
+    }
 }

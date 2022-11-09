@@ -2,6 +2,14 @@ package medium17.rotting_oranges;
 
 import java.util.*;
 
+/**
+ * LC: 994
+ *
+ * https://leetcode.com/problems/rotting-oranges/solutions/583522/rotting-oranges/
+ *
+ * Time complexity: O(NM)
+ * Space complexity: O(NM)
+ */
 public class RottingOranges {
     public int orangesRotting(int[][] grid) {
         int totalMins = 0;
@@ -17,7 +25,7 @@ public class RottingOranges {
 
     private int countHelper(int i, int j, int[][] grid) {
 
-        int counter = 0;
+        int counter = -1;
         Queue<List<Integer>> queue = new LinkedList<>();
         queue.add(Arrays.asList(i, j));
 
@@ -35,7 +43,7 @@ public class RottingOranges {
             }
             counter++;
         }
-        return counter - 1;
+        return counter;
     }
 
     private List<List<Integer>> findNeighbors(int i, int j, int[][] grid) {
