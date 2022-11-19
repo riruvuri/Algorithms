@@ -16,10 +16,9 @@ public class PizzaCuts {
         }
 
         Map<String, Long> memo = new HashMap<>();
-        int tmp = (int)10e9 + 7;
+        int tmp = (int)1e9 + 7;
 
         int result = (int)(dfs(pizza, memo, k, 0, pizza.length - 1, 0, pizza[0].length() - 1) % tmp);
-        //int result = (int) dfs(pizza, memo, k, 0, pizza.length - 1, 0, pizza[0].length() - 1);
         return result;
     }
 

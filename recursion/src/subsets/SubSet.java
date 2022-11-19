@@ -6,6 +6,8 @@ import java.util.Stack;
 
 /**
  * Given a set of distinct integers return all possible subsets.
+ *
+ * https://leetcode.com/problems/subsets/solutions/1766675/java-intuition-of-approach-backtracking/
  */
 public class SubSet {
     public List<List<Integer>> printSubSets(List<Integer> input) {

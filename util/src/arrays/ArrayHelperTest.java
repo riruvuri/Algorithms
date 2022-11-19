@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ArrayHelperTest {
 
@@ -20,5 +22,17 @@ public class ArrayHelperTest {
         int[][] output = ArrayHelper.sort(input);
 
         Assert.assertArrayEquals(new int[][]{{1,3},{2,6},{8,10},{15,18}}, output);
+    }
+
+    @Test
+    public void test_sort_map() {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(3, 75);
+        map.put(1, 99);
+        map.put(2, 85);
+        map.put(4, 70);
+
+        int[][] outputArr = ArrayHelper.sortMapOfInts(map);
+        Assert.assertArrayEquals(new int[][]{{1,99},{2,85},{3,75},{4,70}}, outputArr);
     }
 }

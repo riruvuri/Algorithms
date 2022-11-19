@@ -1,8 +1,16 @@
 package medium37.word_search;
 
 /**
+ * LC: 79
+ *
  * T(n) = O(n * m * dfs)
- * T(n) = O(n * m * 4 ^ n)
+ * T(n) = O(n * m * 4 ^ l)
+ * Total number of cells in the grid= n * m, can be represented as 'N'
+ * Length of the sting to be matched: L
+ * T(n) = O(N * 4 ^ L)
+ *
+ * Space complexity: O(L)
+ * The maximum length of call stack is the length of the word.
  */
 public class WordSearch {
     public boolean exist(char[][] board, String word) {

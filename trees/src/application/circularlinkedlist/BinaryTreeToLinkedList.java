@@ -13,7 +13,6 @@ public class BinaryTreeToLinkedList {
         List<BinaryTreeNode> inorderList = new ArrayList<>();
         prepareInorderList(root, inorderList);
 
-        BinaryTreeNode newCircularLL = inorderList.get(0);
         for (int i=1; i < inorderList.size() - 1; i++) {
             inorderList.get(i-1).right = inorderList.get(i);
             inorderList.get(i).left = inorderList.get(i-1);
