@@ -7,10 +7,7 @@ public class MeetingTime {
 
     public boolean hasMeetingConflict(ArrayList<ArrayList<Integer>> meetingIntervals) {
         PriorityQueue<ArrayList<Integer>> meetingBoard = new PriorityQueue<>(new MeetingIntervalComparator());
-        for (int i=0; i < meetingIntervals.size(); i++) {
-            ArrayList<Integer> intervals = meetingIntervals.get(i);
-            meetingBoard.offer(intervals);
-        }
+        meetingBoard.addAll(meetingIntervals);
 
         ArrayList<Integer> previousMeeting = meetingBoard.poll();
         while (!meetingBoard.isEmpty()) {

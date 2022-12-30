@@ -12,6 +12,7 @@ public class CountingSortCumulativeCount {
             countArray[input[i]]++;
         }
 
+        // This helps to identify the position of the element 
         for (int i=1; i < countArray.length; i++) {
             countArray[i] += countArray[i-1];
         }

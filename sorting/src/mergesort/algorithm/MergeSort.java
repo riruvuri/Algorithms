@@ -9,6 +9,7 @@ public class MergeSort {
     public void mergeSort(int[] input, int start, int end) {
         // Leaf level cases
         if (start >= end) {
+            System.out.println("Returning with start and end:" + start + ", " + end);
             return;
         }
 
@@ -21,6 +22,8 @@ public class MergeSort {
         int i=start;
         int j=mid+1;
         int[] auxArray = new int[end - start + 1];
+
+        System.out.println("Creating aux. array of size:"+ auxArray.length + ", start:" + start + ", end:" + end);
         int auxCounter = 0;
         while (i <= mid && j <= end) {
             int left = input[i];
@@ -43,7 +46,7 @@ public class MergeSort {
             auxArray[auxCounter++] = input[j++];
         }
 
-        // Commbine - copy the elements from aux array to input
+        // Combine - copy the elements from aux array to input
         for (int m=0; m < auxArray.length; m++) {
             input[start] = auxArray[m];
             start++;

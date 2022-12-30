@@ -21,10 +21,6 @@ public class GroupAnagrams {
             map.get(sortedStr).add(strs[i]);
         }
 
-        for (Map.Entry<String, List<String>> entry : map.entrySet()) {
-            results.add(entry.getValue());
-        }
-
-        return results;
+        return map.values().stream().toList();
     }
 }

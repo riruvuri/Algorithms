@@ -33,6 +33,7 @@ public class RadixSort {
         }
 
         for (int i=input.length - 1; i >= 0; i--) {
+        //for (int i=0; i < input.length; i++) {
             int lsd = (input[i]/div) % 10;
             outputArray[countArray[lsd] - 1] = input[i];
             countArray[lsd]--;

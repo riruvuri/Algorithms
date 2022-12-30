@@ -38,6 +38,7 @@ public class NearestSmallerTower {
         }
 
         int[] output = new int[input.length];
+        Arrays.fill(output, -1);
         for (int i=0; i < input.length; i++) {
             if (nextMinIndex[i] == -1 && prevMinIndex[i] == -1) {
                 continue;
@@ -47,7 +48,7 @@ public class NearestSmallerTower {
                 output[i] = prevMinIndex[i];
             } else if (prevMinIndex[i] == -1) {
                 output[i] = nextMinIndex[i];
-            } else if (nextMinIndex[i] - i < prevMinIndex[i] - i) {
+            } else if (Math.abs(nextMinIndex[i] - i) < Math.abs(prevMinIndex[i] - i)) {
                 output[i] = nextMinIndex[i];
             } else {
                 output[i] = prevMinIndex[i];
