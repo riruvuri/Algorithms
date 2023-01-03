@@ -26,10 +26,10 @@ public class TopKFrequentElements {
 
         // Unique elements with counts
         for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
-            Integer key = entry.getKey();
-            Integer val = entry.getValue();
+            int element = entry.getKey();
+            int counter = entry.getValue();
 
-            frequencyCounts.get(val).add(key);
+            frequencyCounts.get(counter - 1).add(element);
         }
 
         List<Integer> output = new ArrayList<>();

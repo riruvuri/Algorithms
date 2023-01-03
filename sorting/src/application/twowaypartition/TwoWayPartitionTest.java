@@ -1,4 +1,4 @@
-package application.levelordertraversal.twowaypartition;
+package application.twowaypartition;
 
 import org.junit.Assert;
 import org.junit.Test;

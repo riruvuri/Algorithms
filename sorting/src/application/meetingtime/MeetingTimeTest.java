@@ -1,4 +1,4 @@
-package application.levelordertraversal.meetingtime;
+package application.meetingtime;
 
 import org.junit.Assert;
 import org.junit.Test;

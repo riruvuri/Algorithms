@@ -17,6 +17,10 @@ Divide & Conquer:
     - Quick sort
 
 Transform & Conquer:
+    - ADT
+        - Heap implementations. For ex: PriorityQueue
+        Heap is a good choice when to maintain k largest or smallest elements.
+        To maintain top k elements, use min heap. To maintain bottom k elements use max heap.
 
 
 ---------------------------------

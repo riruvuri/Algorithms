@@ -1,4 +1,4 @@
-package application.levelordertraversal.meetingtime;
+package application.meetingtime;
 
 import java.util.ArrayList;
 import java.util.Comparator;

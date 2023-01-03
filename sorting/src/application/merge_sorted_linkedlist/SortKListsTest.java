@@ -1,4 +1,4 @@
-package hard.merge_lists;
+package application.merge_sorted_linkedlist;
 
 import binarysearchtrees.algorithm.LinkedListNode;
 import linkedlists.LinkedListUtil;
